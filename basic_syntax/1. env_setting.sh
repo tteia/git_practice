@@ -38,3 +38,23 @@ git remote add origin 내 레포주소
 git add .
 git commit -m ""
 git push origin master
+
+# 사용자(이름, 이메일) 지정 방법
+# 전역적 사용자 지정
+git config --global user.name "tteia"
+git config --global user.email "tteia.dl@gmail.com"
+
+# 지역적 사용자 지정
+# 현재 repositiry에 한해서만 사용자 변경
+git config --local user.name "tteia"
+git config --local user.email "tteia.dl@gmail.com"
+
+# config 내용 조회
+# repository, name, email ...
+git config --list
+# 사용자 이름 / 이메일 조회
+git config user.name
+git config user.email
+
+# git ignore 파일 실습
+# 확장자 .gitignore 파일 생성 후 git 추적 제외 대상 나열
