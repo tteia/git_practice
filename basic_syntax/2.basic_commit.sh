@@ -17,3 +17,14 @@ git commit -m "메세지 타이틀" -m "메세지 내용"
 
 # add와 commit 을 동시에
 git commit -am "메세지 내용"
+
+# git log 간결하게
+git log --oneline
+
+# 전체 이력 조회
+git log --all
+
+# 원격 저장소로 업로드
+git push origin 브런치명
+
+# 충돌 무시하고 강제 push
