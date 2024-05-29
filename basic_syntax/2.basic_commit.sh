@@ -21,6 +21,9 @@ git commit -am "메세지 내용"
 # git log 간결하게
 git log --oneline
 
+# 로그를 그래프 형태로 조회
+git log --graph
+
 # 전체 이력 조회
 git log --all
 
@@ -28,3 +31,12 @@ git log --all
 git push origin 브런치명
 
 # 충돌 무시하고 강제 push
+# 1. 충돌 발생 > 원격 내용 pull 로 가져오기 > 내 로컬 파일과 비교 > merge
+# 2. 충돌 발생 > 로컬 기준으로 강제 push > git push --force
+git push origin master --force # 충돌 무시하고 강제 push
+
+# 특정 commit ID로의 전환
+git checkout 커밋ID
+
+# 다시 현재의 master(현재 브런치)의 commit으로 return
+git checkout master
