@@ -28,7 +28,7 @@ git log --graph
 git log --all
 
 # 원격 저장소로 업로드
-git push origin 브런치명
+git push origin 브랜치명
 
 # 충돌 무시하고 강제 push
 # 1. 충돌 발생 > 원격 내용 pull 로 가져오기 > 내 로컬 파일과 비교 > merge
@@ -38,7 +38,8 @@ git push origin master --force # 충돌 무시하고 강제 push
 # 특정 commit ID로의 전환
 git checkout 커밋ID
 
-# 다시 현재의 master(현재 브런치)의 commit으로 return
+# 다시 현재의 master(현재 브랜치)의 commit으로 return
 git checkout master
 
 # git pull은 원격의 변경사항을 local로 다운로드
+git pull origin main
