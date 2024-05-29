@@ -8,3 +8,12 @@ git add testfolder/test2.txt
 
 # commit 이력 확인(local repository의 이력)
 git log
+
+# local repository 에 반영 및 커밋 이력 생성
+git commit -m "메세지 타이틀" -m "메세지 내용"
+
+# vi 모드에서 작성 : git commit 후 엔터
+# 첫 줄 > 제목 / 이후 작성 > 내용
+
+# add와 commit 을 동시에
+git commit -am "메세지 내용"
