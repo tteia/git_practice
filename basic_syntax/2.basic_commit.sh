@@ -71,6 +71,7 @@ git diff A브랜치 B브랜치
 git fetch # 원격의 변경사항을 로컬에 가져오되 병합은 하지 않는 것.
 # 비교 : git pull origin master 와 git fetch origin master 비교
 git fetch --all
+git fetch --all --prune
 
 
 #git stash
@@ -88,7 +89,6 @@ git push origin v1.0 # tag release 배포 / commit push 와 상관없이 태그 
 git tag # 태그 목록 조회
 
 # branch
-
 git branch 브랜치명 # 브랜치 생성 / 현재 checkout 하고 있는 브랜치를 기준으로 브랜치 생성됨.
 git checkout 브랜치명 # 해당 브랜치로 전환
 git branch # 브랜치 목록 조회
@@ -99,6 +99,8 @@ git checkout -b 브랜치명 # 브런치 생성과 전환 동시에 ! => 자주 
 # 로컬에서 브랜치 생성 시 주의사항
 # 최신화된 main 에서 checkout -b
 # => git checkout main -> git pull -> git checkout -b feature/test
-
 # 원격에서 브랜치 생성 -> 로컬에서 해당 브랜치를 fetch
 git branch feature/author_register
+
+git branch -D 브랜치명 # 브랜치 삭제 (origin에서 삭제하더라도 local에서도 삭제처리)
+
