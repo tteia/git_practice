@@ -1,4 +1,2 @@
 hello world
 summer
-beach
-time
