@@ -100,5 +100,7 @@ git checkout -b 브랜치명 # 브런치 생성과 전환 동시에 ! => 자주 
 # 최신화된 main 에서 checkout -b
 # => git checkout main -> git pull -> git checkout -b feature/test
 # 원격에서 브랜치 생성 -> 로컬에서 해당 브랜치를 fetch
+git branch feature/author_register
 
 git branch -D 브랜치명 # 브랜치 삭제 (origin에서 삭제하더라도 local에서도 삭제처리)
+
