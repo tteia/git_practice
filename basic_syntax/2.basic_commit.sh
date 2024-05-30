@@ -89,3 +89,4 @@ git branch 브랜치명 # 브랜치 생성 / 현재 checkout 하고 있는 브�
 git checkout 브랜치명 # 해당 브랜치로 전환
 git branch # 브랜치 목록 조회
 
+git branch feature/author_register
