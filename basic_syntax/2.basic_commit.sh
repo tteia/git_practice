@@ -82,3 +82,9 @@ git tag v1.0 # 버전 명시 tagging
 git tag v1.0 -m "1. 주요 추가 사항_1 2. 추가 사항_2" # 변경사항 명시해서 버전 명시하기
 git push origin v1.0 # tag release 배포 / commit push 와 상관없이 태그 별도 push
 git tag # 태그 목록 조회
+
+git branch 브랜치명 # 브랜치 생성 / 현재 checkout 하고 있는 브랜치를 기준으로 브랜치 생성됨.
+git checkout 브랜치명 # 해당 브랜치로 전환
+git branch # 브랜치 목록 조회
+
+git branch feature/author_register
