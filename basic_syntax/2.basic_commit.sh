@@ -88,11 +88,13 @@ git push origin v1.0 # tag release 배포 / commit push 와 상관없이 태그 
 git tag # 태그 목록 조회
 
 # branch
+
 git branch 브랜치명 # 브랜치 생성 / 현재 checkout 하고 있는 브랜치를 기준으로 브랜치 생성됨.
 git checkout 브랜치명 # 해당 브랜치로 전환
 git branch # 브랜치 목록 조회
 git branch feature/author_register 
 
+<<<<<<< HEAD
 git checkout -b 브랜치명 # 브런치 생성과 전환 동시에 ! => 자주 쓰임
 
 # 로컬에서 브랜치 생성 시 주의사항
@@ -100,3 +102,6 @@ git checkout -b 브랜치명 # 브런치 생성과 전환 동시에 ! => 자주 
 # => git checkout main -> git pull -> git checkout -b feature/test
 
 # 원격에서 브랜치 생성 -> 로컬에서 해당 브랜치를 fetch
+=======
+git branch feature/author_register
+>>>>>>> 264772236f44d5faae484680a49188598c540f21
