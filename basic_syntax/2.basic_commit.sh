@@ -67,10 +67,13 @@ git diff commitId1 commitId2
 git diff A브랜치 B브랜치
 
 
-# git fetch
-# 원격의 변경사항을 로컬에 가져오되 병합은 하지 않는 것.
+#git fetch
+git fetch # 원격의 변경사항을 로컬에 가져오되 병합은 하지 않는 것.
 # 비교 : git pull origin master 와 git fetch origin master 비교
+git fetch --all
 
+
+#git stash
 git stash # 작업 중인 사항을 임시 저장하는 명령어
 git stash pop # 저장한 작업 목록 꺼내기 (가장 최신의 작업 목록. 꺼내면서 없어짐)
 git stash apply stash@인덱스값 # 저장한 목록은 놔둔 채 작업 목록 적용
@@ -78,6 +81,7 @@ git stash list # 저장한 작업 사항 목록 조회
 git stash show -p 인덱스 # 저장한 작업 목록 상세 조회
 git stash clear # 저장한 stash 목록 전체 삭제
 
+#git tag
 git tag v1.0 # 버전 명시 tagging
 git tag v1.0 -m "1. 주요 추가 사항_1 2. 추가 사항_2" # 변경사항 명시해서 버전 명시하기
 git push origin v1.0 # tag release 배포 / commit push 와 상관없이 태그 별도 push
@@ -87,10 +91,12 @@ git tag # 태그 목록 조회
 git branch 브랜치명 # 브랜치 생성 / 현재 checkout 하고 있는 브랜치를 기준으로 브랜치 생성됨.
 git checkout 브랜치명 # 해당 브랜치로 전환
 git branch # 브랜치 목록 조회
-git branch feature/author_register
+git branch feature/author_register 
 
 git checkout -b 브랜치명 # 브런치 생성과 전환 동시에 ! => 자주 쓰임
 
 # 로컬에서 브랜치 생성 시 주의사항
 # 최신화된 main 에서 checkout -b
 # => git checkout main -> git pull -> git checkout -b feature/test
+
+# 원격에서 브랜치 생성 -> 로컬에서 해당 브랜치를 fetch
