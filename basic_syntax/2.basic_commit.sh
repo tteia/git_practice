@@ -72,6 +72,8 @@ git diff A브랜치 B브랜치
 # 비교 : git pull origin master 와 git fetch origin master 비교
 
 git stash # 작업 중인 사항을 임시 저장하는 명령어
-git stash pop # 저장한 작업 목록 꺼내기 (가장 최신의 작업 목록)
+git stash pop # 저장한 작업 목록 꺼내기 (가장 최신의 작업 목록. 꺼내면서 없어짐)
+git stash apply stash@인덱스값 # 저장한 목록은 놔둔 채 작업 목록 적용
 git stash list # 저장한 작업 사항 목록 조회
 git stash show -p 인덱스 # 저장한 작업 목록 상세 조회
+git stash clear # 저장한 stash 목록 전체 삭제
