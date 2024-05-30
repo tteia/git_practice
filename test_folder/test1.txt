@@ -6,4 +6,8 @@ hello world5
 hello world6
 hello world7
 hello world8
+<<<<<<< HEAD
 hello world9
+=======
+hello world9
+>>>>>>> cef942a839f40c0004cac06002be2e63435b7cae
